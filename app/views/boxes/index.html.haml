@@ -1,12 +1,6 @@
-%h1 Listing boxes
+#newBox
 
 %table
-  %tr
-    %th Content
-    %th
-    %th
-    %th
-
   - @boxes.each do |box|
     %tr
       %td= box.content
@@ -17,3 +11,9 @@
 %br
 
 = link_to 'New Box', new_box_path
+
+:coffeescript
+  $ ->
+    boxes = new BBBox.Collections.BoxesCollection(#{@boxes.to_json.html_safe})
+    boxes.each (box) ->
+      $("#newBox").append box.get("content") + "<br>"
