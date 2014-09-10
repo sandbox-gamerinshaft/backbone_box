@@ -1,1 +1,2 @@
-= box.get("content")
+%span#delete
+  = box.get("content")

@@ -1,13 +1,6 @@
 #newBox
 #boxes
 
-%table
-  - @boxes.each do |box|
-    %tr
-      %td= box.content
-      %td= link_to 'Show', box
-      %td= link_to 'Edit', edit_box_path(box)
-      %td= link_to 'Destroy', box, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
