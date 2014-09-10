@@ -12,3 +12,12 @@
     boxes.each (box) ->
       view = new BBBox.Views.Boxes.BoxView({box : box})
       $("#boxes").append(view.render().el)
+    newBox = new BBBox.Views.Boxes.NewView({boxes : boxes})
+    $("#newBox").html(newBox.render().el)
+    boxes.on "add", (box) ->
+      view = new BBBox.Views.Boxes.BoxView({box : box})
+      $("#boxes").append(view.render().el)
+
+
+
+
