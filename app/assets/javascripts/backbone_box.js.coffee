@@ -1,4 +1,4 @@
-window.BackboneBox =
+window.BBBox =
   Models: {}
   Collections: {}
   Views: {}
@@ -6,4 +6,5 @@ window.BackboneBox =
   initialize: -> alert 'Hello from Backbone!'
 
 $(document).ready ->
-  BackboneBox.initialize()
+  BBBox.initialize()
+
