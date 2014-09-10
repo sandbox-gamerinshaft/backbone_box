@@ -1,1 +1,1 @@
-hoge
+= box.get("content")

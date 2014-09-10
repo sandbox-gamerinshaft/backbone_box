@@ -17,5 +17,6 @@
   $ ->
     boxes = new BBBox.Collections.BoxesCollection(#{@boxes.to_json.html_safe})
     boxes.each (box) ->
+      console.log box
       view = new BBBox.Views.Boxes.BoxView({box : box})
       $("#boxes").append(view.render().el)
