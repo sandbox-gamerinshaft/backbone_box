@@ -1,7 +1,8 @@
 BBBox.Views.Boxes || = {}
 class BBBox.Views.Boxes.BoxView extends Backbone.View
   template: JST["boxes/box"]
-  className: "btn btn-default"
+  className: "box"
+  tagName: "span"
 
   events:
     "click #delete" : "destroy"

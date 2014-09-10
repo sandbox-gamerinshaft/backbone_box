@@ -1,2 +1,2 @@
-%span#delete
+#delete.btn.btn-default
   = box.get("content")
