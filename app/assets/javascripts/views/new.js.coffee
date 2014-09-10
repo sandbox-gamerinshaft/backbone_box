@@ -23,6 +23,8 @@ class BBBox.Views.Boxes.NewView extends Backbone.View
     @box.save null,
       success: (box) =>
         @boxes.add box
+        @box = new BBBox.Models.Boxes()
+        $(@template).find("textarea").val("")
       error: =>
         alert "waa"
 
