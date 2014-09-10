@@ -1,4 +1,5 @@
 #newBox
+#boxes
 
 %table
   - @boxes.each do |box|
@@ -16,4 +17,5 @@
   $ ->
     boxes = new BBBox.Collections.BoxesCollection(#{@boxes.to_json.html_safe})
     boxes.each (box) ->
-      $("#newBox").append box.get("content") + "<br>"
+      view = new BBBox.Views.Boxes.BoxView({box : box})
+      $("#boxes").append(view.render().el)
