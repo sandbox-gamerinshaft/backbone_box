@@ -1,0 +1,1 @@
+class SApp.Routers.SAppRouter extends Backbone.Router
