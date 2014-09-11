@@ -1,0 +1,1 @@
+class SApp.Views.ShowView extends Backbone.View
