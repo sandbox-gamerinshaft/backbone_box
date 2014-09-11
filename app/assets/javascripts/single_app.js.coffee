@@ -1,11 +1,11 @@
-window.BBBox =
+window.SApp =
   Models: {}
   Collections: {}
   Views: {}
   Routers: {}
   initialize: ->
-    # alert 'Hello from Backbone!'
+    alert 'hoge!'
 
 $(document).ready ->
-  BBBox.initialize()
+  SApp.initialize()
 

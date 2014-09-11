@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require underscore
 //= require backbone
+//= require single_app
 //= require backbone_box
 //= require_tree ../templates
 //= require_tree ./models
