@@ -1,12 +1,12 @@
 class SApp.Routers.SAppRouter extends Backbone.Router
   routes:
     "index" : "index"
-    "show"  : "show"
+    "show:id"  : "show"
     ""      : "index"
 
   index: ->
     view = new SApp.Views.IndexView
     $('#app').html view.render().el
-  show: ->
-    view = new SApp.Views.ShowView
+  show: (id)->
+    view = new SApp.Views.ShowView(id : id)
     $('#app').html view.render().el
