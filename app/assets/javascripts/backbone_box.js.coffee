@@ -6,6 +6,6 @@ window.BBBox =
   initialize: ->
     # alert 'Hello from Backbone!'
 
-$(document).ready ->
-  BBBox.initialize()
+# $(document).ready ->
+#   BBBox.initialize()
 
