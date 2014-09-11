@@ -1,1 +1,2 @@
-class SApp.Views.appView extends Backbone.View
+SApp.Views ||= {}
+class SApp.Views.AppView extends Backbone.View

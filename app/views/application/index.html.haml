@@ -1,1 +1,6 @@
 #app
+
+:coffeescript
+  $ ->
+    view = new SApp.Views.AppView()
+    $('#app').html(view.render().el)
